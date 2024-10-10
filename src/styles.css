@@ -1,0 +1,309 @@
+/* Global Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #001f3f;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #555;
+}
+
+button, .button {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .button:hover {
+  background: linear-gradient(135deg, #0056b3, #003f7f);
+  transform: scale(1.05);
+}
+
+section {
+  padding: 50px 20px;
+}
+
+/* Navigation Styling */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #001f3f, #003f7f);
+  margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+/* Hero Banner */
+.hero-banner {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              linear-gradient(135deg, #007bff, #001f3f);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #ffffff, #c4e0ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+/* Featured Projects */
+.featured-projects {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+  text-align: center;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  margin: 20px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  margin-top: 15px;
+  color: #001f3f;
+}
+
+.project-card p {
+  margin-bottom: 10px;
+}
+
+/* Section Divider */
+.section-divider {
+  height: 2px;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  margin: 40px 0;
+}
+
+.project-card .button {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border-radius: 5px;
+}
+
+.project-card .button:hover {
+  background: linear-gradient(135deg, #0056b3, #003f7f);
+}
+
+/* Career Timeline */
+.timeline-section {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f4f4f4, #f9f9f9);
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-item {
+  background-color: #ffffff;
+  border-left: 4px solid #007bff;
+  padding: 20px;
+  margin: 20px 0;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.timeline-item h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #001f3f;
+}
+
+.timeline-item p {
+  margin-top: 10px;
+  color: #555;
+}
+
+.timeline-item:before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 20px;
+  background-color: #007bff;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+
+/* Stats Counter */
+.stats-counter {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  text-align: center;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item h3 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.stat-item p {
+  font-size: 1.2rem;
+}
+
+/* Services */
+.services-section {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f4f4f4, #f9f9f9);
+  text-align: center;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+/* Testimonials */
+.testimonials-section {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #e0f7fa, #c4e0ff);
+  text-align: center;
+}
+
+.testimonials-section blockquote {
+  font-style: italic;
+  margin: 30px 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials-section footer {
+  margin-top: 10px;
+  color: #555;
+}
+
+/* CTA Banner */
+.cta-banner {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #001f3f, #003f7f);
+  color: white;
+  text-align: center;
+}
+
+.cta-banner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-banner p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-banner .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-banner .button:hover {
+  background: linear-gradient(135deg, #0056b3, #003f7f);
+}
+
+
