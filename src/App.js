@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes, Link } from 'react-router-dom'; // No need for Router here
+import { Route, Routes, Link, Navigate } from 'react-router-dom'; // No need for Router here since it's in index.js
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import About from './pages/About';
@@ -30,6 +30,9 @@ function App() {
 
       {/* Main Routes */}
       <Routes>
+        {/* Redirect from /website to / */}
+        <Route path="/website" element={<Navigate to="/" replace />} />
+
         <Route
           path="/"
           element={
